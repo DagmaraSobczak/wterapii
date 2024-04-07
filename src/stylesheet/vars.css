@@ -1,0 +1,16 @@
+:root {
+  /*background-colors*/
+  --primary-background-color: #f9f8f9;
+
+  /*text colors*/
+  --dark-text-color: #1d1d1d;
+
+  /*brand colors*/
+  --dark-brand-color: #521b9a;
+
+  /*colors*/
+  --red-color: #e30613;
+
+  /*fonts*/
+  --main-font: 'Raleway', sans-serif;
+}
