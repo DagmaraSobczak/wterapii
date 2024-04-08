@@ -1,7 +1,11 @@
+import Nav from '../../components/Nav/Nav'
+
+import navigationData from '../../components/Nav/index.js'
+
 const Home = () => {
   return (
     <>
-      <h1>Tu będzie strona główna</h1>
+      <Nav routes={navigationData.routes} />
     </>
   )
 }
