@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Uwaga Smartfon!</title>
-		<script type="text/javascript">
+		<title></title>
+		<script type="application/javascript">
 			var pathSegmentsToKeep = 1;
 
 			var l = window.location;
