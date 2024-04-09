@@ -1,4 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
+import ReactDOM from 'react-dom/client'
+import {BrowserRouter} from 'react-router-dom'
 import 'modern-normalize/modern-normalize.css'
 //import SharedLayout from './components/SharedLayout/SharedLayout'
 import Home from './pages/Home/Home'
