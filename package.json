@@ -13,19 +13,17 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.2.1",
-    "hamburger-react": "^2.5.0",
-    "i18next": "^23.7.18",
-    "i18next-browser-languagedetector": "^7.2.0",
-    "i18next-http-backend": "^2.4.2",
+
+
     "modern-normalize": "^2.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "^14.0.1",
-    "react-loader-spinner": "^6.1.6",
+
+
     "react-router-dom": "^6.21.0",
-    "react-scroll": "^1.9.0",
-    "swiper": "^11.0.5"
+    "react-scroll": "^1.9.0"
+  
   },
   "devDependencies": {
     "@babel/cli": "^7.24.1",

@@ -1,11 +1,7 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 import PropTypes from 'prop-types'
-
-//import {scrollToTop} from '../Scroll'
 import navigationRoutes from '../Nav/index'
-
-//import icon from '../../assets/svg/sprite.svg'
 import css from './Dropdown.module.css'
 
 const Dropdown = ({setNavIsOpen, setDropIsOpen}) => {
@@ -18,17 +14,25 @@ const Dropdown = ({setNavIsOpen, setDropIsOpen}) => {
   const findNestedArray = (array) =>
     array.find((item) => Array.isArray(item.el))?.el || null
 
-  const elNav = findNestedArray(navigationRoutes.routes)
+  const elNav = findNestedArray(navigationRoutes)
 
-  return elNav.map((elItem) => (
-    <NavLink
-      key={elItem.elTitle}
-      to={elItem.elHref}
-      onClick={handleDropdownLinkClick}
-    >
-      <li className={css.dropdownListItem}>{elItem.elTitle}</li>
-    </NavLink>
-  ))
+  if (!elNav) return null
+
+  return (
+    <ul className={css.dropdownList}>
+      {elNav.map((elItem) => (
+        <li key={elItem.elHref} className={css.dropdownListItem}>
+          <NavLink
+            to={elItem.elHref}
+            onClick={handleDropdownLinkClick}
+            className={css.dropdownLink}
+          >
+            {elItem.elTitle}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+  )
 }
 
 Dropdown.propTypes = {
