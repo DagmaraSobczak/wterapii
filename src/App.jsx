@@ -1,5 +1,5 @@
 import {Routes, Route} from 'react-router-dom'
-import ReactDOM from 'react-dom/client'
+//import ReactDOM from 'react-dom/client'
 
 import 'modern-normalize/modern-normalize.css'
 import SharedLayout from './components/SharedLayout/SharedLayout'
@@ -28,10 +28,14 @@ import Tools from './pages/OnlineTools/Tools'
 import Articles from './pages/OnlineTools/Articles'
 import WeAreLearningTherapy from './pages/Webinars/weAreLearningTherapy'
 import ConversationsAboutTherapy from './pages/Webinars/conversationsAboutTherapy'
+import Menu from './components/Menu/Menu.jsx'
+import Banner from './components/Banner/Banner.jsx'
 
 function App() {
   return (
     <>
+    <Menu></Menu>
+    <Banner></Banner>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />

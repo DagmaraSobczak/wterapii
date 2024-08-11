@@ -22,7 +22,7 @@ const Nav = ({setNavIsOpen}) => {
   return (
     <div className={css.nav}>
       <nav className={css.navList}>
-        {routes.map((route, index) => (
+        {routes.map((route, ) => (
           <div className={css.navItem} key={route.href}>
             <NavLink
               className={css.navLink}
